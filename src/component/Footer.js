@@ -82,7 +82,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* end */}
       <div className="flex justify-between items-center">
         <div className="w-[135px] h-[60px]">
           <img src={logo} alt="footerlogo" />

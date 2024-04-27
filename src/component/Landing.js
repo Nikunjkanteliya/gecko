@@ -8,13 +8,10 @@ const Landing = () => {
   return (
     <div className="relative min-h-[800px] bg-[#e7f1f2]">
       <header className=" h-[120px]  flex items-center justify-between">
-        {" "}
         <div className="w-[180px] h-[80px] ml-5 ">
-          {" "}
           <img src={logo} alt="logo" />
-        </div>{" "}
+        </div>
         <div className="z-10">
-          {" "}
           <ul className="flex items-center font-Mulish text-[20px] cursor-pointer ">
             <li
               className="p-5 hover:text-[#fff]"

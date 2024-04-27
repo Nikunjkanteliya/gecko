@@ -1,3 +1,9 @@
+import audit from "../images/audit.png";
+import budget from "../images/001-budget.png";
+import payroll from "../images/payroll.png";
+import softtrain from "../images/softtraining.png";
+import tax from "../images/tax.png";
+import managment from "../images/manage.png";
 export const stepOne = (
   <svg
     width="340"
@@ -189,3 +195,36 @@ export const stepthree = (
 export const arrow = <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.00001 7.00409H22.59L17.29 1.71409C16.8979 1.32197 16.8979 0.686214 17.29 0.294092C17.6821 -0.0980305 18.3179 -0.0980305 18.71 0.294092L25.71 7.29409C25.7907 7.38196 25.8551 7.48356 25.9 7.59409C25.9056 7.62719 25.9056 7.66099 25.9 7.69409C25.9273 7.77495 25.9441 7.85897 25.95 7.94409V8.00409C25.9495 8.11026 25.9292 8.21541 25.89 8.31409C25.8485 8.42635 25.7838 8.52858 25.7 8.61409L18.7 15.6141C18.5122 15.8034 18.2566 15.9099 17.99 15.9099C17.7234 15.9099 17.4678 15.8034 17.28 15.6141C17.0907 15.4263 16.9842 15.1707 16.9842 14.9041C16.9842 14.6375 17.0907 14.3819 17.28 14.1941L22.59 9.00409H1.00001C0.447727 9.00409 1.14441e-05 8.55638 1.14441e-05 8.00409C1.14441e-05 7.45181 0.447727 7.00409 1.00001 7.00409Z" fill="#3D5FDD"/>
 </svg>
+
+export const servicepageData = [
+  {
+    img: audit,
+    head: "Audit & Account",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  },
+  {
+    img: budget,
+    head: "Budget & Projections",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  },
+  {
+    img: payroll,
+    head: "Payroll & Bookkeeping",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  },
+  {
+    img: softtrain,
+    head: "Software Training & IT",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  },
+  {
+    img: tax,
+    head: "Tax planning & Returns",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  },
+  {
+    img: managment,
+    head: "Management Information",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+  },
+]
