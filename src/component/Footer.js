@@ -22,7 +22,7 @@ const Footer = () => {
           },
           {}
         );
-        variables = variables.url.replace("http:", "");
+
         // Find the request for "Get All Blogs"
         const getAllBlogsRequest = collectionData?.collection?.item?.find(
           (item) => item?.name === "Get Settings"
@@ -33,9 +33,7 @@ const Footer = () => {
           "{{url}}",
           variables?.url
         );
-
-        console.log(apiUrl);
-
+        apiUrl.replace("http:", "");
         // Fetch data from the endpoint
         const blogsResponse = await fetch(apiUrl);
         if (!blogsResponse.ok) {
