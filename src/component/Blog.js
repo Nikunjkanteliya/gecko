@@ -38,7 +38,7 @@ const Blog = () => {
           "{{url}}",
           variables?.url
         );
-
+        apiUrl.replace("http:", "");
         // Fetch data from the endpoint
         const blogsResponse = await fetch(apiUrl);
         if (!blogsResponse.ok) {

@@ -29,11 +29,11 @@ const Footer = () => {
         )?.request;
 
         // Replace {{url}} with the actual URL from environment variables
-        const apiUrl = getAllBlogsRequest.url.raw.replace(
+        let apiUrl = getAllBlogsRequest.url.raw.replace(
           "{{url}}",
-          variables?.url
+          variables?.url.replace("http:", "")
         );
-        apiUrl.replace("http:", "");
+
         // Fetch data from the endpoint
         const blogsResponse = await fetch(apiUrl);
         if (!blogsResponse.ok) {
