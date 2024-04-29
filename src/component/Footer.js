@@ -31,7 +31,7 @@ const Footer = () => {
         // Replace {{url}} with the actual URL from environment variables
         let apiUrl = getAllBlogsRequest.url.raw.replace(
           "{{url}}",
-          variables?.url.replace("http", "")
+          variables?.url
         );
 
         // Fetch data from the endpoint
