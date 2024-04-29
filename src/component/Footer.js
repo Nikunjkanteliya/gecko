@@ -15,14 +15,14 @@ const Footer = () => {
         const collectionData = await collectionResponse?.json();
 
         // Extract the environment variables
-        const variables = collectionData?.collection?.variable?.reduce(
+        let variables = collectionData?.collection?.variable?.reduce(
           (acc, variable) => {
             acc[variable.key] = variable?.value;
             return acc;
           },
           {}
         );
-
+        variables = variables.url.replace("http:", "");
         // Find the request for "Get All Blogs"
         const getAllBlogsRequest = collectionData?.collection?.item?.find(
           (item) => item?.name === "Get Settings"
@@ -33,6 +33,8 @@ const Footer = () => {
           "{{url}}",
           variables?.url
         );
+
+        console.log(apiUrl);
 
         // Fetch data from the endpoint
         const blogsResponse = await fetch(apiUrl);
